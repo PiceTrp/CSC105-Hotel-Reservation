@@ -1,0 +1,30 @@
+#welcome {
+    //margin-top: 10em;
+
+    .container {
+        width: 100%;
+        // background-image: url("../pictures/EveryComponents/Pics_rooms/Exclusive3_crop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >p:first-child {
+            font-family: 'Parisienne', cursive;
+            font-size: 120px;
+            color: white;
+            margin: 30px 0px;
+        }
+
+        >p:last-child {
+            font-family: 'Parisienne', cursive;
+            font-size: 26px;
+            color: white;
+            line-height: 41px;
+            text-align: center;
+        }
+    }
+}

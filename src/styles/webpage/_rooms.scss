@@ -1,0 +1,91 @@
+#rooms {
+    width: 100%;
+    height: auto;
+    background-color: #141316;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1400px;
+        width: 100%;
+        height: auto;
+
+        .head {
+            display: flex;
+            margin-top: 50px;
+
+            >div {
+                margin-bottom: 30px;
+
+                >p {
+                    font-family: 'Cinzel', serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 70px;
+                    line-height: 94px;
+                    text-align: center;
+                    color: #E6C869;
+                    padding-top: 50px;
+                }
+
+                >div {
+                    width: 600px;
+                    height: 2px;
+                    background-color: #F5D15A;
+                }
+
+            }
+
+        }
+
+        .pic_room {
+            display: flex;
+            width: 100%;
+
+            .parallax {
+                flex: 1;
+                margin: 20px 20px;
+
+                .inside {
+                    height: 380px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    >p:first-child {
+                        font-family: 'Lato', serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 24px;
+                        //color: #f1ece7;
+                        color: #FFF;
+                        margin-bottom: 15px;
+                    }
+
+                    >p:last-child {
+                        font-family: 'Lato', serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 20px;
+                        text-align: center;
+                        //color: #f0ebe5;
+                        color: #FFFFFF;
+                        max-width: 420px;
+                        padding-bottom: 30px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
