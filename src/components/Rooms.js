@@ -30,7 +30,7 @@ const Rooms = () => {
                 </div>
 
                 <div class="pic_room">
-                    <Parallax bgImage={img1_1} bgImageAlt="Rooms" strength={150} className="parallax">
+                    <Parallax bgImage={img1_1} bgImageAlt="Rooms" strength={200} className="parallax">
                         <div class="inside">
                             <p>
                                 Primea Suite
@@ -40,29 +40,7 @@ const Rooms = () => {
                             </p>
                         </div>
                     </Parallax>
-                    <Parallax className="parallax" bgImage={img1_2} bgImageAlt="Rooms" strength={150}>
-                        <div class="inside">
-                            <p>
-                                Primea Suite
-                            </p>
-                            <p>
-                                the ideal choice for prolonged stays with family and loved ones.
-                            </p>
-                        </div>
-                    </Parallax>
-                </div>
-                <div class="pic_room">
-                    <Parallax className="parallax" bgImage={img2_1} bgImageAlt="Rooms" strength={150}>
-                        <div class="inside">
-                            <p>
-                                Primea Suite
-                            </p>
-                            <p>
-                                the ideal choice for prolonged stays with family and loved ones.
-                            </p>
-                        </div>
-                    </Parallax>
-                    <Parallax className="parallax" bgImage={img2_2} bgImageAlt="Rooms" strength={150}>
+                    <Parallax className="parallax" bgImage={img1_2} bgImageAlt="Rooms" strength={200}>
                         <div class="inside">
                             <p>
                                 Primea Suite
@@ -74,7 +52,7 @@ const Rooms = () => {
                     </Parallax>
                 </div>
                 <div class="pic_room">
-                    <Parallax className="parallax" bgImage={img3_1} bgImageAlt="Rooms" strength={150}>
+                    <Parallax className="parallax" bgImage={img2_1} bgImageAlt="Rooms" strength={200}>
                         <div class="inside">
                             <p>
                                 Primea Suite
@@ -84,7 +62,29 @@ const Rooms = () => {
                             </p>
                         </div>
                     </Parallax>
-                    <Parallax className="parallax" bgImage={img3_2} bgImageAlt="Rooms" strength={150}>
+                    <Parallax className="parallax" bgImage={img2_2} bgImageAlt="Rooms" strength={200}>
+                        <div class="inside">
+                            <p>
+                                Primea Suite
+                            </p>
+                            <p>
+                                the ideal choice for prolonged stays with family and loved ones.
+                            </p>
+                        </div>
+                    </Parallax>
+                </div>
+                <div class="pic_room">
+                    <Parallax className="parallax" bgImage={img3_1} bgImageAlt="Rooms" strength={200}>
+                        <div class="inside">
+                            <p>
+                                Primea Suite
+                            </p>
+                            <p>
+                                the ideal choice for prolonged stays with family and loved ones.
+                            </p>
+                        </div>
+                    </Parallax>
+                    <Parallax className="parallax" bgImage={img3_2} bgImageAlt="Rooms" strength={200}>
                         <div class="inside">
                             <p>
                                 Primea Suite

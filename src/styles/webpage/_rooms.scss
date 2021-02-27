@@ -4,6 +4,7 @@
     background-color: #141316;
     display: flex;
     justify-content: center;
+    padding-bottom: 90px;
 
     .container {
         display: flex;
@@ -12,11 +13,11 @@
         align-items: center;
         max-width: 1400px;
         width: 100%;
-        height: auto;
 
         .head {
             display: flex;
             margin-top: 50px;
+            margin-bottom: 10px;
 
             >div {
                 margin-bottom: 30px;

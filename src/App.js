@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { SmoothProvider } from 'react-smooth-scrolling';
 
 import "./styles/index.css";
 
@@ -25,7 +26,8 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </Router >
+
   );
 }
 
