@@ -1,5 +1,6 @@
 import Nav from "../components/Nav";
 import Banner from "../components/Banner";
+import Dropdown from "../components/Dropdown";
 import Welcome from "../components/Welcome";
 import About from "../components/About";
 import Map from "../components/Map";
@@ -18,6 +19,6 @@ const Home = () => {
             <Footer />
         </>
     );
-}
+};
 
 export default Home;

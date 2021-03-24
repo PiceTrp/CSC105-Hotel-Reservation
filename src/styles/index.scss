@@ -1,18 +1,23 @@
-@import './base/reset';
-@import './base/typography';
+@import "./base/reset";
+@import "./base/typography";
 
-@import './webpage/nav';
-@import './webpage/banner';
-@import './webpage/welcome';
-@import './webpage/about';
-@import './webpage/map';
-@import './webpage/service';
-@import './webpage/rooms';
-@import './webpage/footer';
+@import "./webpage/nav";
+@import "./webpage/banner";
+@import "./webpage/welcome";
+@import "./webpage/about";
+@import "./webpage/map";
+@import "./webpage/service";
+@import "./webpage/rooms";
+@import "./webpage/modal";
+@import "./webpage/footer";
+@import "./webpage/calendar";
+@import "./webpage/booking";
+@import "./webpage/bookingRooms";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300&display=swap");

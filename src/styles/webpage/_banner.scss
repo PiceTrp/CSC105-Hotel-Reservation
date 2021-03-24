@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 102;
 
     .overlay {
         width: 100%;
@@ -17,22 +18,23 @@
         left: 0;
         z-index: 2;
         background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
     }
 
     h1 {
         z-index: 3;
-        font-family: 'Cinzel', serif;
+        font-family: "Cinzel", serif;
         font-style: normal;
         font-weight: 400;
         font-size: 50px;
         text-align: center;
         line-height: 94px;
-        color: #FFFFFF;
+        color: #ffffff;
         text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
         margin-top: 30px;
         margin-bottom: 50px;
 
-        @media screen and(max-width:900px) {
+        @media screen and(max-width:1000px) {
             font-size: 30px;
             line-height: 54px;
         }
@@ -50,7 +52,7 @@
         padding: 20px;
         font-size: 14px;
 
-        @media screen and(max-width:900px) {
+        @media screen and(max-width:1000px) {
             flex-direction: column;
             width: 80%;
 
@@ -78,9 +80,24 @@
             align-items: center;
             justify-content: space-between;
             margin: 0 0 0 15px;
-            padding: 0px 15px;
+            padding: 0px 0px 0 15px;
             border: 1px solid gray;
             border-radius: 6px;
+
+            button {
+                color: #ffffff;
+            }
+
+            .MuiSvgIcon-root {
+                width: 18px;
+                height: 18px;
+                transform: translateY(-2px);
+            }
+
+            .MuiInputBase-root::before,
+            .MuiInputBase-root::after {
+                display: none;
+            }
         }
 
         .type-selector {
@@ -142,7 +159,13 @@
             .book-hover {
                 background: transparent;
                 color: rgba(223, 190, 106, 0.7);
-                background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+                background: linear-gradient(
+                    270deg,
+                    rgba(223, 190, 106, 0.8),
+                    rgba(146, 111, 52, 0.8),
+                    rgba(34, 34, 34, 0),
+                    rgba(34, 34, 34, 0)
+                );
                 background-position: 1% 50%;
                 background-size: 300% 300%;
                 border-radius: 6px;
@@ -156,6 +179,5 @@
                 background-position: 100% 50%;
             }
         }
-
     }
 }

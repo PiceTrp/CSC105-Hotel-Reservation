@@ -1,6 +1,16 @@
 #welcome {
-    padding-top: 10%;
-    background-color: #FAFAFA;
+    position: relative;
+    background-color: #fafafa;
+
+    /*.overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+        z-index: 50;
+    }*/
 
     .container {
         width: 100%;
@@ -13,19 +23,21 @@
         justify-content: center;
         align-items: center;
 
-        >p:first-child {
-            font-family: 'Parisienne', cursive;
+        > p:nth-child(1) {
+            font-family: "Parisienne", cursive;
             font-size: 120px;
             color: white;
             margin: 30px 0px;
+            z-index: 51;
         }
 
-        >p:last-child {
-            font-family: 'Parisienne', cursive;
+        > p:nth-child(2) {
+            font-family: "Parisienne", cursive;
             font-size: 26px;
             color: white;
             line-height: 41px;
             text-align: center;
+            z-index: 51;
         }
     }
 }
