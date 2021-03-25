@@ -12,8 +12,6 @@ import Grid from "@material-ui/core/Grid";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-
-import Pic from "../pictures/Everypics_inweb/login/Lobby_Day_Urdaneta1.jpg";
 import pic_1 from "../pictures/Everypics_inweb/login/01.jpg";
 import pic_3 from "../pictures/Everypics_inweb/login/03.jpg";
 
@@ -35,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         height: "100vh",
     },
     image: {
-        backgroundImage: `url(${pic_1})`,
+        backgroundImage: `url(${pic_3})`,
         backgroundRepeat: "no-repeat",
         backgroundColor:
             theme.palette.type === "light"
@@ -63,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SignInSide() {
+const SignUp = () => {
     const classes = useStyles();
 
     return (
@@ -90,7 +88,7 @@ export default function SignInSide() {
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">
-                        Sign in
+                        Create an account
                     </Typography>
                     <form className={classes.form} noValidate>
                         <TextField
@@ -98,8 +96,28 @@ export default function SignInSide() {
                             margin="normal"
                             required
                             fullWidth
+                            id="outlined-basic"
+                            label="First name"
+                            name="firstname"
+                            autoFocus
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="outlined-basic"
+                            label="Last name"
+                            name="lastname"
+                            autoFocus
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
                             id="email"
-                            label="Email Address"
+                            label="Email"
                             name="email"
                             autoComplete="email"
                             autoFocus
@@ -115,6 +133,7 @@ export default function SignInSide() {
                             id="password"
                             autoComplete="current-password"
                         />
+
                         <FormControlLabel
                             control={
                                 <Checkbox value="remember" color="primary" />
@@ -137,7 +156,7 @@ export default function SignInSide() {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="/login/signup" variant="body2">
+                                <Link href="#" variant="body2">
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Grid>
@@ -150,4 +169,6 @@ export default function SignInSide() {
             </Grid>
         </Grid>
     );
-}
+};
+
+export default SignUp;

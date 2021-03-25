@@ -30,6 +30,9 @@ export default function Calendar() {
                     KeyboardButtonProps={{
                         "aria-label": "change date",
                     }}
+                    style={{
+                        color: "white",
+                    }}
                 />
             </Grid>
         </MuiPickersUtilsProvider>

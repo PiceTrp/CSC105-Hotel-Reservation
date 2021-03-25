@@ -67,7 +67,7 @@ const BookingRoom = () => {
                             comfort of your own space.
                         </p>
                         <div>
-                            <a href="" class="btn">
+                            <a href="/booking/rooms/confirmation" class="btn">
                                 BOOK NOW
                             </a>
                         </div>
@@ -102,7 +102,7 @@ const BookingRoom = () => {
                             experience at Royal Coral.
                         </p>
                         <div>
-                            <a href="" class="btn">
+                            <a href="/booking/rooms/confirmation" class="btn">
                                 BOOK NOW
                             </a>
                         </div>
@@ -137,7 +137,7 @@ const BookingRoom = () => {
                             productivity.
                         </p>
                         <div>
-                            <a href="" class="btn">
+                            <a href="/booking/rooms/confirmation" class="btn">
                                 BOOK NOW
                             </a>
                         </div>

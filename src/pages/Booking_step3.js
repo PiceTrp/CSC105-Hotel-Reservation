@@ -1,12 +1,11 @@
 import DownArrow from "../pictures/EveryComponents/All_Icons/down-arrow.svg";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Rooms from "../components/BookingRooms";
-import Information from "../components/BookingInformation";
+import Confirmation from "../components/BookingConfirmation";
 import Correct from "../pictures/EveryComponents/All_Icons/check.svg";
 import Circle from "../pictures/EveryComponents/All_Icons/oval.svg";
 
-const Booking = () => {
+const Booking_room = () => {
     return (
         <section id="booking">
             <div class="nav">
@@ -49,7 +48,7 @@ const Booking = () => {
                             <p>
                                 Step <span>1</span>
                             </p>
-                            <img src={Circle} width="40px" height="40px"></img>
+                            <img src={Correct} width="40px" height="40px"></img>
                         </div>
                     </div>
                     <div class="room">
@@ -58,7 +57,7 @@ const Booking = () => {
                             <p>
                                 Step <span>11</span>
                             </p>
-                            <img src={Circle} width="40px" height="40px"></img>
+                            <img src={Correct} width="40px" height="40px"></img>
                         </div>
                     </div>
                     <div class="confirm">
@@ -82,9 +81,9 @@ const Booking = () => {
                 </div>
             </div>
 
-            <Information />
+            <Confirmation />
         </section>
     );
 };
 
-export default Booking;
+export default Booking_room;
