@@ -10,7 +10,13 @@ import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import AccountCircleRoundedIcon from "@material-ui/icons/AccountCircleRounded";
 import Typography from "@material-ui/core/Typography";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormHelperText from "@material-ui/core/FormHelperText";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
 import pic_1 from "../pictures/Everypics_inweb/login/01.jpg";
 import pic_3 from "../pictures/Everypics_inweb/login/03.jpg";
@@ -54,15 +60,29 @@ const useStyles = makeStyles((theme) => ({
     },
     form: {
         width: "100%", // Fix IE 11 issue.
-        marginTop: theme.spacing(1),
+        marginTop: theme.spacing(2),
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+    },
+    formControl: {
+        margin: theme.spacing(0),
+        minWidth: 120,
+        width: "100%",
+    },
+    selectEmpty: {
+        marginTop: theme.spacing(2),
     },
 }));
 
 const SignUp = () => {
     const classes = useStyles();
+
+    const [title, setTitle] = React.useState("");
+
+    const handleChange = (event) => {
+        setTitle(event.target.value);
+    };
 
     return (
         <Grid container component="main" className={classes.root}>
@@ -85,12 +105,31 @@ const SignUp = () => {
             >
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar}>
-                        <LockOutlinedIcon />
+                        <AccountCircleRoundedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">
                         Create an account
                     </Typography>
                     <form className={classes.form} noValidate>
+                        <FormControl
+                            variant="outlined"
+                            className={classes.formControl}
+                        >
+                            <InputLabel id="demo-simple-select-outlined-label">
+                                Title
+                            </InputLabel>
+                            <Select
+                                labelId="demo-simple-select-outlined-label"
+                                id="demo-simple-select-outlined"
+                                value={title}
+                                onChange={handleChange}
+                                label="Title"
+                            >
+                                <MenuItem value={"Mr."}>Mr.</MenuItem>
+                                <MenuItem value={"Mrs."}>Mrs.</MenuItem>
+                                <MenuItem value={"Ms."}>Ms.</MenuItem>
+                            </Select>
+                        </FormControl>
                         <TextField
                             variant="outlined"
                             margin="normal"
@@ -138,7 +177,7 @@ const SignUp = () => {
                             control={
                                 <Checkbox value="remember" color="primary" />
                             }
-                            label="Remember me"
+                            label="I accept the terms and conditions"
                         />
                         <Button
                             type="submit"
@@ -147,20 +186,8 @@ const SignUp = () => {
                             color="primary"
                             className={classes.submit}
                         >
-                            Sign In
+                            Sign Up
                         </Button>
-                        <Grid container>
-                            <Grid item xs>
-                                <Link href="#" variant="body2">
-                                    Forgot password?
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link href="#" variant="body2">
-                                    {"Don't have an account? Sign Up"}
-                                </Link>
-                            </Grid>
-                        </Grid>
                         <Box mt={5}>
                             <Copyright />
                         </Box>
