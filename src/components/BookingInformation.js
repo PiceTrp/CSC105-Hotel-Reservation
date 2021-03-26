@@ -64,9 +64,7 @@ const Information = () => {
     const [title, setTitle] = React.useState("");
     const [people, setPeople] = React.useState("");
     const [currency, setCurrency] = React.useState("BTC");
-    const [selectedDate, setSelectedDate] = React.useState(
-        new Date("2014-08-18T21:11:54")
-    );
+    const [selectedDate, setSelectedDate] = React.useState(new Date());
 
     const handleChange = (event) => {
         setTitle(event.target.value);
