@@ -1,6 +1,6 @@
 import { Parallax } from "react-parallax";
 import Pic_wel from "../pictures/EveryComponents/Pics_rooms/Outdoors/Exclusive3_copy.jpg";
-import Bg from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background.jpg";
+import Bg from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background-min.jpg";
 
 const Welcome = () => {
     const sectionStyle = {

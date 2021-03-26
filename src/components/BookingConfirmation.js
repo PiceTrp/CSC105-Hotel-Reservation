@@ -12,7 +12,6 @@ import img3_1 from "../pictures/EveryComponents/Pics_rooms/Private_rooms/Exclusi
 import img3_2 from "../pictures/EveryComponents/Pics_rooms/Private_rooms/Exclusive_Rooms/Exclusive3_02.jpg";
 import crown from "../pictures/EveryComponents/All_Icons/crown.png";
 import diamond from "../pictures/EveryComponents/All_Icons/diamond.png";
-import Bg from "../pictures/Everypics_inweb/decoration/2749701.jpg";
 
 const Booking_Confirmation = () => {
     return (

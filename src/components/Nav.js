@@ -5,7 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
-import Bg from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background.jpg";
+import Bg from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background-min.jpg";
 
 const Nav = () => {
     const [longScrolled, setLongScrolled] = useState(false);
@@ -63,11 +63,11 @@ const Nav = () => {
                     <a href="#" class="ordinary">
                         CONTACT
                     </a>
-                    <a href="#" class="ordinary">
+                    <a href="/booking" class="ordinary">
                         RESERVATION
                     </a>
                     <a href="/login" class="book">
-                        <p class="book-hover">SIGN UP</p>
+                        <p class="book-hover">LOG IN</p>
                     </a>
                 </div>
             </div>

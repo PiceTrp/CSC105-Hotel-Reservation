@@ -10,7 +10,7 @@ import crown from "../pictures/EveryComponents/All_Icons/crown.png";
 import diamond from "../pictures/EveryComponents/All_Icons/diamond.png";
 import Underline from "../pictures/EveryComponents/All_Icons/underline.png";
 import Star from "../pictures/EveryComponents/All_Icons/star.png";
-import MarbleTexture from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background.jpg";
+import MarbleTexture from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background-min.jpg";
 
 const BookingRoom = () => {
     return (
