@@ -135,9 +135,9 @@ const Information = () => {
 
                         <TextField
                             className={classes.TextField}
-                            id="standard-search"
+                            id="email"
                             label="Email address"
-                            type="search"
+                            type="email"
                             style={{
                                 marginLeft: "8px",
                                 marginRight: "30px",
@@ -149,6 +149,7 @@ const Information = () => {
                             id="standard-search"
                             label="Phone"
                             type="search"
+                            helperText="xxx-xxx-xxxx"
                         />
 
                         <div class="country-currency-box">

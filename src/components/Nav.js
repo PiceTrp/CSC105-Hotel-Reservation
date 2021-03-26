@@ -5,6 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
+import Bg from "../pictures/Everypics_inweb/decoration/close-up-white-marble-texture-background.jpg";
 
 const Nav = () => {
     const [longScrolled, setLongScrolled] = useState(false);
@@ -30,6 +31,7 @@ const Nav = () => {
         <nav
             style={{
                 backgroundColor: longScrolled ? "#EFEFEF" : "transparent",
+                backgroundImage: longScrolled ? `url(${Bg})` : "",
                 boxShadow: longScrolled
                     ? "0 5px 10px -2px rgba(0,0,0,0.2)"
                     : "none",

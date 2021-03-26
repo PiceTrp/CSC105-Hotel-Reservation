@@ -36,13 +36,14 @@ nav {
             .ordinary {
                 font-size: 13px;
                 text-decoration: none;
-                margin: 10px 16px;
+                padding: 10px 16px;
                 color: inherit;
                 transition: all 0.3s;
 
                 &:hover {
-                    opacity: 0.7;
                     color: #c8b26a;
+                    background-color: #231f20;
+                    border-radius: 5px;
                 }
 
                 @media screen and(max-width:1000px) {

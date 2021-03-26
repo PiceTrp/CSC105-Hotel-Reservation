@@ -5,7 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 const Booking_Confirmation = () => {
     return (
         <section class="confirmation">
-            <div class="container-confirmation"></div>
+            <div class="container-confirmation">
+                <p>Coming Soon</p>
+            </div>
         </section>
     );
 };

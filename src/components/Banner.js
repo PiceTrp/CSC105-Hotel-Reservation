@@ -5,9 +5,11 @@ import {
     faGem,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import Calendar from "./Calendar";
 
 const Banner = () => {
+    const [icon, setIcon] = useState(0);
     return (
         <section id="banner">
             <div class="overlay"></div>
@@ -37,10 +39,26 @@ const Banner = () => {
                 <div class="bbb">
                     TYPE
                     <div class="type-selector">
-                        <div>
+                        <div
+                            style={{
+                                backgroundColor:
+                                    icon == 1 ? "white" : "transparent",
+                                color: icon == 1 ? "black" : "white",
+                                cursor: "pointer",
+                            }}
+                            onClick={() => setIcon(1)}
+                        >
                             <FontAwesomeIcon icon={faGem} />
                         </div>
-                        <div>
+                        <div
+                            style={{
+                                backgroundColor:
+                                    icon == 2 ? "white" : "transparent",
+                                color: icon == 2 ? "black" : "white",
+                                cursor: "pointer",
+                            }}
+                            onClick={() => setIcon(2)}
+                        >
                             <FontAwesomeIcon icon={faCrown} />
                         </div>
                     </div>
