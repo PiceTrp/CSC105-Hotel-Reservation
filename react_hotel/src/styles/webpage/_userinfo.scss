@@ -1,0 +1,133 @@
+.user-info {
+    width: 100%;
+    height: 1000px;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    .container-userInfo {
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+
+            > div:first-child {
+                width: 1px;
+                height: 40px;
+                background-color: #877249;
+            }
+
+            > p:nth-child(2) {
+                font-family: "Cinzel Decorative", cursive;
+                color: black;
+                font-size: 28px;
+            }
+
+            > div:nth-child(3) {
+                width: 1px;
+                height: 40px;
+                background-color: #877249;
+            }
+        }
+
+        .MuiInputBase-root {
+            background-color: white;
+        }
+
+        > div:nth-child(4) {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+
+            .address {
+                width: 300px;
+            }
+
+            .beside-address {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .left_bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 650px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 5px 10px 18px #888888;
+
+            > p:nth-child(1) {
+                margin-top: 20px;
+                font-family: "Cinzel Decorative", cursive;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 35px;
+                text-align: center;
+                color: #a79559;
+            }
+
+            hr {
+                margin-top: 20px;
+                border-top: 1px solid #877249;
+                width: 250px;
+            }
+
+            > div:nth-child(5) {
+                width: 550px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                > p:first-child {
+                    flex: 1;
+                    font-family: "Cinzel", serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 13px;
+                    text-align: left;
+                }
+
+                > div:nth-child(2) {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    > div {
+                        width: 6px;
+                        height: 46px;
+                        border-left: 1px solid #877249;
+                        margin-right: 50px;
+                    }
+
+                    > p:last-child {
+                        justify-content: flex-end;
+                        font-family: "Cinzel", serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 13px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            > hr:last-child {
+                width: 600px;
+                margin-top: 12px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.user-setting {
+    width: 100%;
+    height: 1200px;
+    background-color: #fafafa;
+
+    .user-setting-container {
+        padding-top: 100px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+
+            > div:first-child {
+                width: 1px;
+                height: 40px;
+                background-color: #877249;
+            }
+
+            > p:nth-child(2) {
+                font-family: "Cinzel Decorative", cursive;
+                color: black;
+                font-size: 28px;
+            }
+
+            > div:nth-child(3) {
+                width: 1px;
+                height: 40px;
+                background-color: #877249;
+            }
+        }
+
+        .MuiInputBase-root {
+            background-color: white;
+        }
+
+        > div:nth-child(4) {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+
+            .address {
+                width: 300px;
+            }
+
+            .beside-address {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

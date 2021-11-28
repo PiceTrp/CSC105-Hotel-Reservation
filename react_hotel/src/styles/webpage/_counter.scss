@@ -1,0 +1,41 @@
+.counter {
+    margin-top: 10px;
+
+    .counter-container {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > p:first-child {
+            font-family: "Centuar", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            color: #614545;
+            text-align: center;
+        }
+
+        > div:nth-child(2) {
+            display: flex;
+
+            > p {
+                margin-top: 6px;
+                width: 120px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: #614545;
+                font-family: "Cinzel";
+                font-size: 24px;
+                font-weight: 400;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+            }
+        }
+    }
+}
